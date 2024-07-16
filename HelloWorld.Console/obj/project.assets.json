@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "HelloWorld.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloWorld.Core/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Core/HelloWorld.Core.csproj",
+      "msbuildProject": "../HelloWorld.Core/HelloWorld.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "HelloWorld.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/james/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/james/HelloWorld/HelloWorld.Console/HelloWorld.Console.csproj",
+      "projectName": "HelloWorld.Console",
+      "projectPath": "/Users/james/HelloWorld/HelloWorld.Console/HelloWorld.Console.csproj",
+      "packagesPath": "/Users/james/.nuget/packages/",
+      "outputPath": "/Users/james/HelloWorld/HelloWorld.Console/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/james/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://baget.webbeds.com/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/james/HelloWorld/HelloWorld.Core/HelloWorld.Core.csproj": {
+              "projectPath": "/Users/james/HelloWorld/HelloWorld.Core/HelloWorld.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
